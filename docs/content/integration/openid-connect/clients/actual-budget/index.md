@@ -110,7 +110,7 @@ variables:
 ##### Standard
 
 ```shell {title=".env"}
-ACTUAL_OPENID_DISCOVERY_URL=https://{{< sitevar name="subdomain-authelia" nojs="auth" >}}.{{< sitevar name="domain" nojs="example.com" >}}
+ACTUAL_OPENID_DISCOVERY_URL=https://{{< sitevar name="subdomain-authelia" nojs="auth" >}}.{{< sitevar name="domain" nojs="example.com" >}}/.well-known/openid-configuration
 ACTUAL_OPENID_CLIENT_ID=actual-budget
 ACTUAL_OPENID_CLIENT_SECRET=insecure_secret
 ACTUAL_OPENID_SERVER_HOSTNAME=https://actual-budget.{{< sitevar name="domain" nojs="example.com" >}}
